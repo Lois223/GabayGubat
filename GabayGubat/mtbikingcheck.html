@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Biking | Checklist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html">Guides</a></li>
+                <li>
+                    <a href="tools.html" style="color: #9BA737;">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html">Rock Climbing</a>
+                <a href="wildlifewatch.html">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html" class="curpage"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html" class="curpage">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+       
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner-guide">
+        <img src="image/pic.jpg">
+        <div class="info">
+            <h1 class="title">Checklist</h1>
+        </div>    
+    </section>
+
+    <section class="checklist-page">   
+        <div class="checklist-container">
+            <h1>Mountain Biking</h1>
+            <ul class="checklist">
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Pre-Ride Preparation</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Assess your mountain bike experience and fitness level</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Choose a mountain bike based on the terrain and trail type</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Check your bike's brakes, tires, and gears</span>
+                            </label> 
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Prepare your route by researching trail conditions, closures, and regulations</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Gather necessary gear and equipment using the checklist below</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Prepare Your Route</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Research mountain biking trails and select a route that suits your skill level and preferences</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Obtain trail maps and review trail conditions, closures, and regulations</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Safety Gear</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Helmet (suitably fitted and in good condition)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Protective eyewear, such as sunglasses or goggles</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>o	Cycling gloves provide hand and grip protection</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Clothing</span>
+                    </label>
+                    <ul class="sub-checklist">
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Cycling shorts with padding for extra comfort</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Wear layers that are appropriate for the weather</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Durable and supportive cycling shoes</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="check-item">
+                            <span>Hydration and Nutrition</span>
+                        </label>
+                        <ul class="sub-checklist">
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="check-item">
+                                    <span>Hydration packs or water bottles</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="check-item">
+                                    <span>Fuel during the ride with energy snacks (bars, gels, nuts)</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Supplies for safety and emergencies</span>
+                            </label>
+                            <ul class="sub-checklist">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-item">
+                                        <span>Basic first-aid supplies, such as bandages, antiseptic wipes, and pain relievers</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-item">
+                                        <span>Cellphone with emergency contact numbers programmed</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-item">
+                                        <span>A trail map or a GPS device</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" class="check-item">
+                                    <span>Before You Hit the Trail</span>
+                                </label>
+                                <ul class="sub-checklist">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="check-item">
+                                            <span>Conduct a bike safety check (brakes, tires, chain, and gears)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="check-item">
+                                            <span>Adjust tire pressure based on trail conditions</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="check-item">
+                                            <span>Ensure that all necessary equipment is packed and secured</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="check-item">
+                                            <span>Inform someone about your riding plans, including the route and estimated return time</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-item">
+                                        <span>During Your Ride</span>
+                                    </label>
+                                    <ul class="sub-checklist">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Wear all safety equipment, including a helmet and eyewear</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Stay hydrated by drinking water frequently throughout the ride</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Keep track of your energy levels and consume snacks as needed</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Follow trail etiquette and give way to other trail users when necessary</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Maintain control and ride within your ability level, particularly on technical sections</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Communicate with your fellow riders through verbal cues or hand signals</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="check-item">
+                                            <span>Safety and Emergency Preparedness</span>
+                                        </label>
+                                        <ul class="sub-checklist">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="check-item">
+                                                    <span>Carry your cell phone so that emergency contacts are easily accessible</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="check-item">
+                                                    <span>Learn about basic first-aid procedures and how to perform common bike repairs</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="check-item">
+                                                    <span>During your ride, keep an eye out for changing trail conditions and weather</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="check-item">
+                                                    <span>Stay on designated trails and adhere to trail rules and regulations</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-item">
+                                        <span>After Your Ride</span>
+                                    </label>
+                                    <ul class="sub-checklist">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Clean and inspect your bike thoroughly to avoid wear and damage</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Perform any required maintenance or repairs</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Reflect on your ride and identify areas for improvement</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="check-item">
+                                                <span>Share your trail knowledge and conditions with other riders or online communities</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <button class="btn-1" id="reset-button">Reset</button>  
+        </div>  
+    </section>
+
+    <section class="checklist-pic">
+        <img src="image/pic.jpg">
+    </section>
+
+   
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+        //checklist
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkItems = document.querySelectorAll('.check-item');
+           
+            // iterate over each check item
+            checkItems.forEach(item => {
+                item.addEventListener('change', function() {
+                    if (this.checked) {
+                        // add 'line-through' text decoration if checkbox is checked
+                        this.nextElementSibling.style.textDecoration = 'line-through';
+                     } else {
+                        // remove text decoration if checkbox is not checked
+                         this.nextElementSibling.style.textDecoration = 'none';
+                     }
+                 });
+            });
+         });
+
+         // checklist reset-button
+        document.getElementById('reset-button').addEventListener('click', function() {
+            // Select all elements with the class 'check-item' (all checkboxes)
+            const checkboxes = document.querySelectorAll('.check-item');
+
+            // Iterate through each checkbox and uncheck it
+            checkboxes.forEach(function(checkbox) {
+                 checkbox.checked = false; // Set the checked property to false       
+                 checkbox.nextElementSibling.style.textDecoration = 'none'; // Remove text decoration
+            });
+         });
+    </script>
+</body>
+</html>

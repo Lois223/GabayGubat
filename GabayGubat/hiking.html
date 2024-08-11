@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking | Guides</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html" style="color: #9BA737;">Guides</a></li>
+                <li>
+                    <a href="tools.html">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html" class="curpage"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html" class="curpage">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html">Rock Climbing</a>
+                <a href="wildlifewatch.html">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner-guide">
+        <img src="image/pic.jpg">
+        <div class="info">
+            <h1 class="title">Hiking</h1>
+        </div>    
+    </section>
+
+    <section class="guide-info">
+        <div class="box-container">
+            <div class="box">
+                <p>Hiking is when people go walking outside on trails or paths found in nature.
+                    Sometimes these walks are easy and flat, like a walk in the park, and other times
+                    they can be hard, like climbing a steep mountain. People who hike like being in
+                    the fresh air, getting some exercise, and seeing beautiful sights like forests, hills,
+                    and other natural places.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>Guides</h2>
+                <h3>Planning your Hike</h3>
+                <h4>Researching and Choosing a Trail</h4>
+                <ul>
+                  <li>Assess the degree of difficulty of the trail (easy, moderate, difficult).</li>  
+                  <li>Verify the trail's length and estimated completion time.</li>   
+                  <li>Investigate trail conditions, including any recent updates or closures.</li>   
+                  <li>Think about the weather and the time of year.</li>                 
+                </ul>
+
+                <h4>Permits and Rules</h4>
+                <ul>
+                  <li>Check to see if any permits are required and obtain them in advance.</li>  
+                  <li>Learn about trail rules and regulations (for example, no littering and
+                    staying on marked paths).</li>                   
+                </ul>
+
+                <h4>Physical Readiness</h4>
+                <ul>
+                  <li>Develop a strength and endurance-boosting exercise regimen.</li>  
+                  <li>Make sure you're in good health and seek medical attention if you have
+                    any concerns.</li>   
+                  <li>If you can, train or practice on the same type of ground or landscape.</li>                 
+                </ul>
+
+                <h3>Packing Essentials</h3>
+                <h4>Navigation Tools</h4>
+                <ul>
+                  <li>Map and compass (ensure you know how to use them).</li>  
+                  <li>GPS device or smartphone with offline maps.</li>   
+                  <li>Trail guides or trail descriptions printed out.</li>                  
+                </ul>
+
+                <h4>Clothing</h4>
+                <ul>
+                  <li>Layered clothing helps regulate body temperature (base, middle, and
+                    outer layers).</li>  
+                  <li>Moisture-wicking base layer.</li>   
+                  <li>An outer layer that is both waterproof and windproof.</li>  
+                  <li>Hat and gloves are recommended for sun protection or warmth.</li>  
+                  <li>Comfortable and durable hiking boots or shoes.</li>   
+                  <li>Extra socks and underwear.</li>                 
+                </ul>
+
+                <h4>Food and Water</h4>
+                <ul>
+                  <li>Sufficient water (aim for half a liter per hour of moderate activity).</li>  
+                  <li>Methods for purifying water (filter, tablets, or purifier).</li>   
+                  <li>High-energy snacks include nuts, dried fruit, and energy bars.</li>  
+                  <li>Meals for long hikes (consider lightweight, non-perishable options).</li>               
+                </ul>
+
+                <h4>Emergency and Safety Gear</h4>
+                <ul>
+                  <li>First-aid kit (with bandages, antiseptics, pain relievers, and blister
+                    treatment).</li>  
+                  <li>Emergency shelter (sleeping bag, emergency blanket).</li>   
+                  <li>Fire-starting equipment (matches, lighter, and firestarter).</li>  
+                  <li>For emergencies, use a whistle and a signal mirror.</li>               
+                </ul>
+
+                <h4>Other Essentials</h4>
+                <ul>
+                  <li>Sun protection (sunscreen, lip balm, sunglasses, and hat).</li>  
+                  <li>Trekking poles for stability and reducing strain.</li>   
+                  <li>Backpack with a comfortable fit and sufficient capacity.</li>  
+                  <li>Extra batteries for a flashlight or headlamp.</li>               
+                </ul>
+
+                <h3>During the Hike</h3>
+                <h4>Start Early</h4>
+                <ul>
+                  <li>Start your hike early in the day to ensure enough daylight.</li>  
+                  <li>Inform someone about your hiking plans and expected return time.</li>                  
+                </ul>
+
+                <h4>Pace Yourself</h4>
+                <ul>
+                  <li>Hike at a steady, manageable pace.</li>  
+                  <li>Take regular breaks to recharge and rehydrate.</li>                  
+                </ul>
+
+                <h4>Stay on the Trail</h4>
+                <ul>
+                  <li>Follow marked paths to avoid environmental damage and getting lost.</li>  
+                  <li>Follow all trail closures and detours.</li>                  
+                </ul>
+
+                <h4>Leave No Trace</h4>
+                <ul>
+                  <li>Take out all trash, including food scraps.</li>  
+                  <li>Do not disturb wildlife or plants.</li>   
+                  <li>When camping, reduce the impact of the campfire (if possible, use a
+                    stove).</li>                 
+                </ul>
+
+                <h4>Hydration and Nutrition</h4>
+                <ul>
+                  <li>Keep yourself hydrated by drinking water on a regular basis.</li>  
+                  <li>Eat small, frequent snacks to stay energized.</li>                  
+                </ul>
+
+                <h4>Safety Precautions</h4>
+                <ul>
+                  <li>Stay aware of your surroundings and potential hazards (wildlife, unstable
+                    terrain).</li>  
+                  <li>Keep an eye on the weather and be ready to turn back if needed.</li>   
+                  <li>In the event that you become lost or require assistance, use your whistle
+                    or signal mirror.</li>               
+                </ul>
+
+                <h3>Post-Hike Considerations</h3>
+                <h4>Stretch and cool down.</h4>
+                <ul>
+                  <li>Cool down and stretch to avoid stiffness and soreness.</li>                  
+                </ul>
+
+                <h4>Check for Ticks and Injuries</h4>
+                <ul>
+                  <li>Examine your entire body for ticks and treat any blisters or injuries.</li>               
+                </ul>
+
+                <h4>Evaluate Your Hike</h4>
+                <ul>
+                  <li>Consider your experience and make a note of any lessons learned for
+                    future hikes.</li>  
+                  <li>Share your experiences and photos in a responsible manner, promoting
+                    Leave No Trace principles.</li>                 
+                </ul>
+            </div>    
+            <div class="links">
+                <a href="hikingcheck.html"><button class="btn-1">View Checklist  <i class="fa-solid fa-arrow-right"></i></button></a>
+                <a href="hikingmap.html"><button class="btn-2">View Map  <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>     
+        </div> 
+    </section>
+
+    <section class="guide-image">
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/h1.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/h5.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/h3.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/h4.jpg">
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+    </script>
+</body>
+</html>

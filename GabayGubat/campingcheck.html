@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping | Checklist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html">Guides</a></li>
+                <li>
+                    <a href="tools.html" style="color: #9BA737;">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html">Rock Climbing</a>
+                <a href="wildlifewatch.html">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html" class="curpage"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html" class="curpage">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+       
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner-guide">
+        <img src="image/pic.jpg">
+        <div class="info">
+            <h1 class="title">Checklist</h1>
+        </div>    
+    </section>
+
+    <section class="checklist-page">   
+        <div class="checklist-container">
+            <h1>Camping</h1>
+            <ul class="checklist">
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Pre-Hike Planning</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Choose a trail and look into its difficulty, length, and conditions.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Check the weather forecast.</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Obtain necessary permits.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Review trail regulations.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Inform someone about your hiking plans and expected return time.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Prepare physically by following a fitness routine.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Navigation Tools</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Trail map</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Compass</span>
+                            </label>
+                        </li>
+                        <label>
+                            <input type="checkbox" class="check-item">
+                            <span>GPS or smartphone with offline maps</span>
+                        </label>
+                    </li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Trail guides or printouts</span>
+                    </label>
+                </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Clothing</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>A base layer that wicks moisture</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Waterproof and windproof outer layer.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Comfortable hiking boots or shoes.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Extra socks and underwear.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Hat, gloves, and sunglasses.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Food and Water</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Enough water (half a liter for every hour of activity)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Water purification methods (filter, tablets, or purifier)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>High-energy snacks (such as nuts, dried fruit, and energy bars).</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Meals for longer hikes.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Emergency and Safety Gear</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>First aid kit</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Emergency shelter (sleeping bag, emergency blanket)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Fire-starting equipment (matches, lighter, and firestarter)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Whistle and signal mirror</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Other Essentials</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Sunscreen and Lipbalm with SPF</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Insect repellent</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Trekking poles</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Backpack that fits comfortably</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Headlamp or flashlight with extra batteries</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>During the Hike</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Start in the morning</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Maintain a steady pace while hiking</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Take regular breaks</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Follow the marked paths</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Pack out all trash</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Drink water regularly</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Eat small and frequent snacks</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Be mindful of your surroundings and potential hazards</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Observe weather conditions</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" class="check-item">
+                        <span>Post-Hike</span>
+                    </label>
+                    <ul class="sub-checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Stretch out and cool down</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Examine for ticks and treat any injuries</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Reflect on your hike and make a note of any lessons learned</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" class="check-item">
+                                <span>Share your photos and experiences responsibly</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>        
+            
+        </div>
+        <div class="button-container">
+            <button class="btn-1" id="reset-button">Reset</button>  
+        </div>  
+    </section>
+    
+
+    <section class="checklist-pic">
+        <img src="image/pic.jpg">
+    </section>
+
+   
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+        //checklist
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkItems = document.querySelectorAll('.check-item');
+           
+            // iterate over each check item
+            checkItems.forEach(item => {
+                item.addEventListener('change', function() {
+                    if (this.checked) {
+                        // add 'line-through' text decoration if checkbox is checked
+                        this.nextElementSibling.style.textDecoration = 'line-through';
+                     } else {
+                        // remove text decoration if checkbox is not checked
+                         this.nextElementSibling.style.textDecoration = 'none';
+                     }
+                 });
+            });
+         });
+
+        // checklist reset-button
+        document.getElementById('reset-button').addEventListener('click', function() {
+            // Select all elements with the class 'check-item' (all checkboxes)
+            const checkboxes = document.querySelectorAll('.check-item');
+
+            // Iterate through each checkbox and uncheck it
+            checkboxes.forEach(function(checkbox) {
+                 checkbox.checked = false; // Set the checked property to false       
+                 checkbox.nextElementSibling.style.textDecoration = 'none'; // Remove text decoration
+            });
+         });
+    </script>
+</body>
+</html>

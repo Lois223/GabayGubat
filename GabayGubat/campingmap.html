@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping | Maps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html">Guides</a></li>
+                <li>
+                    <a href="tools.html" style="color: #9BA737;">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html">Rock Climbing</a>
+                <a href="wildlifewatch.html">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html" class="curpage"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html" class="curpage">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+       
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner-guide">
+        <img src="image/pic.jpg">
+        <div class="info">
+            <h1 class="title">Camping Maps</h1>
+        </div>    
+    </section>
+
+    <section class="maps">
+        <div class="box-container">
+            <div class="box">
+                <div class="maploc">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d62012.696402486225!2d120.88110549926272!3d13.730946953740961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x33bd0757a171a56d%3A0xb16143ada4be142a!2sPVFX%2B579%2C%20Mabini%2C%20Batangas!3m2!1d13.722912099999999!2d120.898235!5e0!3m2!1sen!2sph!4v1716208921776!5m2!1sen!2sph" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info">
+                    <a href="https://g.co/kgs/ooRWSFL" target="_blank">Mt. Gulugod Baboy Campsite</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="maploc">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d26070.245895074015!2d120.91927524325062!3d13.756834441354005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x33bd070e4542189f%3A0xf67606062fa7e993!2s00%20Sitio%20Sampalukan%2C%20Mabini%2C%20Batangas!3m2!1d13.756533899999999!2d120.9238908!5e0!3m2!1sen!2sph!4v1716207910513!5m2!1sen!2sph" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info">
+                    <a href="https://g.co/kgs/8MRmTS5" target="_blank">Tamarind Anilao Camp</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="maploc">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d43847.41755327447!2d121.10870948733982!3d13.74260284600404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x33bd1bc2347832ef%3A0x14cf14d2d98b4c01!2sBatangas!3m2!1d13.745689299999999!2d121.1296584!5e0!3m2!1sen!2sph!4v1716209612416!5m2!1sen!2sph" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info">
+                    <a href="https://www.hillscapebatangas.com/" target="_blank">Hillscape Glamping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+    </script>
+</body>
+</html>

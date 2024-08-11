@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Watching | Guides</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html" style="color: #9BA737;">Guides</a></li>
+                <li>
+                    <a href="tools.html">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html" class="curpage"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html">Rock Climbing</a>
+                <a href="wildlifewatch.html" class="curpage">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+       
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner-guide">
+        <img src="image/pic.jpg">
+        <div class="info">
+            <h1 class="title">Wildlife Watching</h1>
+        </div>    
+    </section>
+
+    <section class="guide-info">
+        <div class="box-container">
+            <div class="box">
+                <p>Wildlife watching is a delightful pastime that involves observing animals in their
+                    natural habitats, such as parks, forests, and even urban areas where animals
+                    thrive. This activity is enjoyed by nature enthusiasts, photographers, researchers,
+                    and those who simply appreciate the outdoors. By engaging in wildlife watching,
+                    people can gain insights into animal behavior and ecology, appreciating how
+                    creatures interact with their environment and each other in their own habitats.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>Guides</h2>
+                <h3>Research and Planning</h3>
+                <h4>Research Wildlife</h4>
+                <ul>
+                  <li>Identify the target species and their habitats.</li>  
+                  <li>Learn about their feeding and mating habits.</li> 
+                  <li>Determine the best time of day or year to observe them.</li>                       
+                </ul>
+
+                <h4>Choose Location</h4>
+                <ul>
+                  <li>Choose wildlife-friendly areas.</li>  
+                  <li>Consider accessibility and permissible access to the area.</li>                      
+                </ul>
+
+                <h4>Check Regulations</h4>
+                <ul>
+                  <li>Research and follow local wildlife watching guidelines and regulations.</li>  
+                  <li>Obtain the necessary permits or permissions to access specific areas.</li>                      
+                </ul>
+
+                <h4>Plan Your Timing</h4>
+                <ul>
+                  <li>Wildlife activity varies throughout the day and year, so plan your visit
+                    around peak activity times.</li>  
+                  <li>Avoid interrupting the breeding or nesting seasons.</li>                      
+                </ul>
+
+                <h3>Gear and Equipment</h3>
+                <h4>Binoculars or spotting scopes</h4>
+                <ul>
+                  <li>Invest in high-quality optics to improve long-range wildlife viewing.</li>                       
+                </ul>
+
+                <h4>Camera with Zoom Lens</h4>
+                <ul>
+                  <li>Photograph wildlife without disturbing them; a telephoto lens is ideal.</li>                       
+                </ul>
+
+                <h4>Field Guide</h4>
+                <ul>
+                  <li>Carry a guidebook to help you identify wildlife species and understand
+                    their behaviors.</li>                       
+                </ul>
+
+                <h3>On-Site Etiquette</h3>
+                <h4>Respect Wildlife</h4>
+                <ul>
+                  <li>Observe from a safe distance and avoid approaching or chasing animals.</li> 
+                  <li>Never feed wildlife because it disrupts their natural behavior and health.</li>                         
+                </ul>
+
+                <h4>Stay Quiet and Still</h4>
+                <ul>
+                  <li>To avoid startling animals, speak quietly and avoid making sudden
+                    movements.</li>                         
+                </ul>
+
+                <h4>Be Patient</h4>
+                <ul>
+                  <li>Wildlife watching requires patience; spend time observing and waiting for
+                    animals to appear.</li>                         
+                </ul>
+
+                <h4>Record and Share Responsibly</h4>
+                <ul>
+                  <li>Take photos and notes in a respectful manner, without disturbing the
+                    wildlife.</li>  
+                  <li>Share wildlife experiences responsibly, without geotagging specific animal
+                    locations.</li>    
+                  <li>Educate others about wildlife conservation and responsible watching
+                    practices.</li>                  
+                </ul>
+
+                <h4>Safety and Conservation</h4>
+                <ul>
+                  <li>To prevent habitat damage and wildlife disturbance, stay on designated
+                    trails.</li>  
+                  <li>Leave no trace by packing out all trash and not disturbing vegetation or
+                    natural features.</li>    
+                  <li>Follow local guidelines and observe wildlife protection regulations.</li>                  
+                </ul>
+            </div>   
+            <div class="links">
+                <a href="wildlifewatchcheck.html"><button class="btn-1">View Checklist  <i class="fa-solid fa-arrow-right"></i></button></a>
+                <a href="wildlifewatchmap.html"><button class="btn-2">View Map  <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>        
+        </div> 
+    </section>
+
+    <section class="guide-image">
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/w2.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/w3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/w4.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/w5.jpg">
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Climbing | Guides</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html" style="color: #9BA737;">Guides</a></li>
+                <li>
+                    <a href="tools.html">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html" class="curpage"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html" class="curpage">Rock Climbing</a>
+                <a href="wildlifewatch.html">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner-guide">
+        <img src="image/pic.jpg">
+        <div class="info">
+            <h1 class="title">Rock Climbing</h1>
+        </div>    
+    </section>
+
+    <section class="guide-info">
+        <div class="box-container">
+            <div class="box">
+                <p>Rock climbing is an exciting and challenging sport where participants climb up, down, or across natural 
+                    rock formations or artificial rock walls. This activity involves using hands, feet, and specialized 
+                    equipment to navigate the surface of a rock or wall. The primary objective in rock climbing is to 
+                    reach the top of a rock formation or the endpoint of a predetermined route without falling.
+                </p>
+            </div>
+    
+            <div class="box">
+                <h2>Guides</h2>
+                <h3>Types of Rock Climbing</h3>
+                <h4>Bouldering</h4>
+                <ul>
+                    <li>Climbing without ropes.</li>  
+                    <li>Typically on small rock formations or artificial walls.</li> 
+                    <li>Requires a crash pad for safety.</li>                       
+                </ul>
+    
+                <h4>Sport Climbing</h4>
+                <ul>
+                    <li>Climbing with pre-placed bolts for protection.</li>  
+                    <li>Requires a rope, harness, and quickdraws.</li>                       
+                </ul>
+    
+                <h4>Traditional (Trad) Climbing</h4>
+                <ul>
+                    <li>Placing removable gear in rock cracks for protection.</li>  
+                    <li>Requires cams, nuts, and other protection devices.</li>                       
+                </ul>
+    
+                <h4>Top-Rope Climbing</h4>
+                <ul>
+                    <li>Rope is anchored at the top of the climb.</li>  
+                    <li>Requires a harness and belay device.</li>                       
+                </ul>
+    
+                <h4>Aid Climbing</h4>
+                <ul>
+                    <li>Using gear to make upward progress.</li>  
+                    <li>Requires specialized equipment like aiders and hooks.</li>                       
+                </ul>
+    
+                <h4>Free Climbing</h4>
+                <ul>
+                    <li>Climbing with ropes for protection but not for upward progress.</li>                       
+                </ul>
+                
+                <h3>Essential Gear</h3>
+                <h4>Climbing Shoes</h4>
+                <ul>
+                    <li>Provide grip and sensitivity.</li>
+                    <li>Should fit snugly but comfortably.</li>
+                </ul>
+                <h4>Harness</h4>
+                <ul>
+                    <li>Secures climber to the rope.</li>
+                    <li>Adjustable leg loops and waist belt.</li>
+                </ul>
+                <h4>Chalk Bag</h4>
+                <ul>
+                    <li>Holds chalk to keep hands dry.</li>
+                </ul>
+                <h4>Helmet</h4>
+                <ul>
+                    <li>Protects head from falling debris.</li>
+                </ul>
+                <h4>Rope</h4>
+                <ul>
+                    <li>Dynamic ropes for sport and trad climbing.</li>
+                    <li>Static ropes for top-rope and aid climbing.</li>
+                </ul>
+                <h4>Carabiners</h4>
+                <ul>
+                    <li>Locking and non-locking types.</li>
+                    <li>Used for connecting gear.</li>
+                </ul>
+                <h4>Quickdraws</h4>
+                <ul>
+                    <li>Consist of two carabiners connected by a sling.</li>
+                    <li>Used in sport climbing.</li>
+                </ul>
+    
+                <h3>Safety Considerations</h3>
+                <h4>Check Gear</h4>
+                <ul>
+                    <li>Inspect harness, rope, and carabiners for wear.</li>
+                </ul>
+                <h4>Belay Techniques</h4>
+                <ul>
+                    <li>Use proper belay methods to prevent falls.</li>
+                </ul>
+                <h4>Communication</h4>
+                <ul>
+                    <li>Use clear commands: "On belay," "Climbing," "Take," "Lowering."</li>
+                </ul>
+                <h4>Climbing Partner</h4>
+                <ul>
+                    <li>Always climb with a reliable partner.</li>
+                </ul>
+                <h4>Weather Conditions</h4>
+                <ul>
+                    <li>Avoid climbing in wet or stormy conditions.</li>
+                </ul>
+                <h4>Emergency Plan</h4>
+                <ul>
+                    <li>Have a plan in case of accidents.</li>
+                    <li>Know the location of the nearest emergency services.</li>
+                </ul>
+    
+                <h3>Training and Techniques</h3>
+                <h4>Warm-Up</h4>
+                <ul>
+                    <li>Stretch and do light exercises before climbing.</li>
+                </ul>
+                <h4>Footwork</h4>
+                <ul>
+                    <li>Precise foot placement and weight distribution.</li>
+                </ul>
+                <h4>Handholds</h4>
+                <ul>
+                    <li>Use open hand grips for endurance.</li>
+                    <li>Use crimp grips for small holds (with caution).</li>
+                </ul>
+                <h4>Body Positioning</h4>
+                <ul>
+                    <li>Keep hips close to the wall.</li>
+                    <li>Use core strength to stabilize.</li>
+                </ul>
+                <h4>Climbing Routes</h4>
+                <ul>
+                    <li>Start with easier routes and gradually increase difficulty.</li>
+                    <li>Learn to read routes for optimal holds and movements.</li>
+                </ul>
+    
+                <h3>Climbing Etiquette</h3>
+                <h4>Respect Others</h4>
+                <ul>
+                    <li>Share climbing spots and be considerate.</li>
+                </ul>
+                <h4>Leave No Trace</h4>
+                <ul>
+                    <li>Pack out all trash and minimize impact in nature.</li>
+                </ul>
+                <h4>Respect Wildlife</h4>
+                <ul>
+                    <li>Avoid disturbing natural habitats.</li>
+                </ul>
+                <h4>Follow Local Regulations</h4>
+                <ul>
+                    <li>Adhere to rules and guidelines of climbing areas.</li>
+                </ul>
+            </div>
+            <div class="links">
+                <a href="rockclimbingcheck.html"><button class="btn-1">View Checklist  <i class="fa-solid fa-arrow-right"></i></button></a>
+                <a href="rockclimbingmap.html"><button class="btn-2">View Map  <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>          
+        </div> 
+    </section>
+     
+    <section class="guide-image">
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/rc2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/rc3.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/rc4.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/rc5.jpg">
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+    </script>
+</body>
+</html>

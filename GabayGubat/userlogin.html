@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabayGubat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="banner-login">
+    <section class="login">
+      <form id ="login-form" class="login-form" method="POST" action="UserLogin.php">
+        <h1 class="title">Login</h1>
+      <hr>
+        <fieldset id="login-info">
+          <label for="email">
+            Email:
+            <input type="email" id="email" name="Email" placeholder="Enter your email"required>
+          </label>
+
+          <label for="password">
+            Password:
+            <input type="password" id="password" name="Password" placeholder="Enter your password"required>
+          </label>
+          <div class="captcha-container">
+            <label for="captchaInput">
+              Captcha:
+            </label>
+            <div class="captcha" id="captcha"></div>
+            <div class="captcha-refresh">
+              <span class="captcha-refresh" id="refreshCaptcha">Refresh</span>
+            </div>
+          </div>
+          <div>
+            <input type="text" id="captchaInput" name="captchaInput" placeholder="Enter Captcha" required>
+          </div>
+        <p><a href="#">Forgot password?</a></p>
+        <input type="submit" name="log_user" value="Login"/>
+        <p class="redirect">Don't have an account? <a href="userregister.html"><span>Register</span></a></p>
+      </form> 
+    </section>
+  </div>
+</body>
+
+<!--CAPTCHA SCRIPT-->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  //function to generate a random CAPTCHA code
+  function generateCaptcha() {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let captcha = '';
+      for (let i = 0; i < 6; i++) {
+          captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      return captcha;
+  }
+  //function to display the CAPTCHA
+  function displayCaptcha() {
+      captchaText = generateCaptcha();
+      document.getElementById('captcha').textContent = captchaText;
+  }
+
+  //generate and display the initial CAPTCHA
+  let captchaText = '';
+  displayCaptcha();
+
+  //refresh CAPTCHA on click
+  document.getElementById('refreshCaptcha').addEventListener('click', displayCaptcha);
+
+  //handle form submission
+  document.getElementById('login-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const userCaptchaInput = document.getElementById('captchaInput').value;
+
+      //validate CAPTCHA
+      if (userCaptchaInput === captchaText) {
+          alert('Login successfully!');
+          window.location.assign("index.html");
+      } else {
+          alert('Incorrect CAPTCHA. Please try again.');
+          //regenerate the CAPTCHA
+          displayCaptcha();
+      }
+  });
+});
+</script>
+</html>

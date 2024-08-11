@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabayGubat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e3d5daa34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="toggle-logo">
+            <a href="#" id="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html"><h1>GabayGubat</h1></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="guides.html">Guides</a></li>
+                <li>
+                    <a href="tools.html">Tools</a>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="checklist.html">Checklist</a></li>
+                    </ul>
+                </li>
+                <li><a href="timesched.html">Time Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="account-profile">
+            <i class="fa-solid fa-user profile-icon" onclick="toggleDropdown()"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <ul>
+                    <li><a href="profile.php">View Profile <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="userlogin.html">Logout <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <div class="sidebar-search-container">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="sidebar-search-input" placeholder="Search...">
+        </div>
+        <div class="tab-container">
+            <a href="guides.html"><i class="fa-solid fa-compass"></i> Guide</a>
+            <div class="subsection">
+                <a href="camping.html">Camping</a>
+                <a href="hiking.html">Hiking</a>
+                <a href="mtbiking.html">Mountain Biking</a>
+                <a href="mountaineering.html">Mountaineering</a>              
+                <a href="rockclimbing.html">Rock Climbing</a>
+                <a href="wildlifewatch.html">Wildlife Watching</a>
+            </div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i> Tools</a>
+            <div class="tool-subsection">
+                <a href="checklist.html"><i class="fa-solid fa-check-square"></i> Checklist</a>
+                <div class="check_map-subsection">
+                    <a href="campingcheck.html">Camping</a>
+                    <a href="hikingcheck.html">Hiking</a>
+                    <a href="mtbikingcheck.html">Mountain Biking</a>
+                    <a href="mountaineeringcheck.html">Mountaineering</a>              
+                    <a href="rockclimbingcheck.html">Rock Climbing</a>
+                    <a href="wildlifewatchcheck.html">Wildlife Watching</a>
+                </div>
+                <a href="map.html"><i class="fa-solid fa-map"></i> Map</a>
+                <div class="check_map-subsection">
+                    <a href="campingmap.html">Camping</a>
+                    <a href="hikingmap.html">Hiking</a>
+                    <a href="mtbikingmap.html">Mountain Biking</a>
+                    <a href="mountaineeringmap.html">Mountaineering</a>              
+                    <a href="rockclimbingmap.html">Rock Climbing</a>
+                    <a href="wildlifewatchmap.html">Wildlife Watching</a>
+                </div>
+            </div>
+            <a href="timesched.html"><i class="fa-solid fa-clock"></i> Time Schedule</a>
+            <a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="userlogin.html"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+        </div>
+       
+        <p class="sidebar-footer">GabayGubat</p>      
+    </section>
+
+    <section class="banner">
+        <img src="image/pic1.jpg">
+        <div class="info">
+            <h1>Explore the great outdoors with confidence</h1>
+            <p>The essence of being well-prepared and self-assured in your outdoor adventures. It implies
+                having the necessary skills, knowledge, and equipment to navigate natural environments safely and effectively.  
+                Whether you're hiking, camping, or rock climbing, this phrase suggests that you can tackle challenges, enjoy the
+                beauty of nature, and make the most of your experiences with a sense of security and readiness.</p>
+
+             <a href="guides.html"><button class="btn-1">Helpful Guides <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>    
+    </section>
+
+    <section class="intro">
+        <div class="content">
+            <div class="image">
+                <img src="image/pic2.jpg">
+            </div>
+            <div class="info">
+                <h1>Unleash your adventurous spirit and dive into the endless thrills of the great outdoors!
+                </h1>
+                <p>We invite you to embrace your sense of adventure and explore the boundless excitement that nature offers.
+                    From hiking and rock climbing to kayaking and camping, this phrase encourages you to step out of your comfort 
+                    zone and experience the diverse and exhilarating activities that the natural world has in store, promising 
+                    unforgettable memories and a deeper connection with the environment.</p>
+                    <a href="checklist.html"><button class="btn-1">See Checklist  <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+        </div>       
+    </section>
+
+    <section class="explore">
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/hiking.jpeg">
+                </div>
+                <div class="info">
+                    <h1>Hiking</h1>
+                    <a href="hiking.html"><button class="btn-1">Explore  <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/camping.jpg">
+                </div>
+                <div class="info">
+                    <h1>Camping</h1>
+                    <a href="camping.html"><button class="btn-1">Explore  <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="box-container left">
+            <div class="box">
+                <div class="image">
+                    <img src="image/rc.jpg">
+                </div>
+                <div class="info">
+                    <h1>Rock Climbing</h1>
+                    <a href="rockclimbing.html"><button class="btn-1">Explore  <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="box-container right">
+            <div class="box">
+                <div class="image">
+                    <img src="image/ww.jpg">
+                </div>
+                <div class="info">
+                    <h1>Wildlife Watching</h1>
+                    <a href="wildlifewatch.html"><button class="btn-1">Explore  <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-banner">
+        <img src="image/pic.jpg">
+        <div class="content">
+            <h1>Well-prepared travel is responsible travel.</h1>
+            <p>DO YOUR PART BY PLANNING AHEAD</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" id="logo"><h1>GabayGubat</h1></a>
+                <h3>Discover Your Path to Adventure and Enlightenment</h3>
+                <div class="icons">
+                    <a href="#" class="fa-brands fa-square-facebook"></a> 
+                    <a href="#" class="fa-brands fa-instagram"></a> 
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                </div>           
+            </div>
+
+            <div class="box">
+                <h3>Helpful Links</h3>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="timesched.html">Time Schedule</a> 
+            </div>
+        </div>
+
+    <div class="credit">©2024 GabayGubat <span> | All rights reserved.</span></div> 
+    </section>
+
+    
+<!--
+    <section class="tabs">
+        <div>
+            <a href="index.html"><i class="fa-solid fa-compass" style="color: #C1C960;"></i>
+            <span style="color: #C1C960;">Guide</span></a>
+        </div>
+        <div>
+            <a href="tools.html"><i class="fa-solid fa-wrench"></i>
+            <span>Tools</span></a>
+        </div>
+        <div>
+            <a href="stats.html"><i class="fa-solid fa-heart-pulse"></i>
+            <span>Stats</span></a>
+        </div>
+        <div>
+            <a href="sos.html"><i class="fa-solid fa-life-ring"></i>
+            <span>SOS</span></a>
+        </div>
+    </section>
+
+
+-->
+    
+    
+    <script>
+        //sidebar
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0"; // Move sidebar to the visible position
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px"; // Move sidebar back to the hidden position
+        }
+
+        // user profile dropdown
+        function toggleDropdown() {
+        var dropdown = document.getElementById("profileDropdown");
+    
+          // Check if the dropdown is currently visible
+          if (dropdown.style.display === "block") {    
+              dropdown.style.display = "none"; // hide if it's visible
+          } else {
+              dropdown.style.display = "block";  // show if it's hidden
+          }
+        }
+
+    </script>
+</body>
+</html>
